@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Home | Apna Bazar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+  </head>
+  <body>
+    <header>
+      <div class="flex navbar">
+       <nav class="leftNav flex">
+          <div id="logo">
+            <img src="images/logo.png" alt="logo" class="img">
+          </div>
+          <ul class="flex">
+            <li class=""><a href="home.html">Home</a></li>
+            <li><a href="products.html">Product</a></li>
+            
+          </ul>
+        </nav>
+      
+        <div>
+          <nav class="rightNav">
+            <ul class="">
+             
+            <div class="signtext">
+              <span><a href="login.html"> Signin</a><a href="signup.html"> Register</a></span>
+            </div>
+            <div class="cart">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i><span>&nbsp;&nbsp;0 items</span>
+            </div>
+            </ul>
+          </nav>
+        </div>
+       
+      </div>
+      <hr>
+    </header>
+
+  <section id="banner">
+      <div class="slideshow-container" >
+      <div id="bannerimg">
+         
+      </div>       
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+        </section>
+
+    <section  class="offerSize" id="showcase">
+     
+      <div id="offerdiv">
+      
+    </div>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2017 Sabaka Bazar Grocery Supplies Pvt Ltd</p>
+    </footer>
+    <script src="javascript/slider.js"></script>
+    <script src="javascript/javascript.js"></script>
+  </body>
+</html>

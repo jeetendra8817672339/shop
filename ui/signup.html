@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="flex-container">
+    <div class="column"><h1>SIGNUP</h1><p>We Do Not Share Your Personal Details</p></div>
+    <div class="column"> 
+      <span id="error" style="color: red;"></span>
+      <form  novalidate >
+  
+         
+        <input type="text" placeholder="Enter firdt name" id="fname" required >
+       
+        <input type="text" placeholder="Enter last name" id="lname" required >
+      
+        <input type="text" placeholder="Enter email" id="email" required >
+        <input type="password" placeholder="Enter Password" id="psw" required>
+        <input type="password" placeholder="confirm Password" id="cpsw" required >
+        <button type="button" id="login" onclick="submitsignup()">Sign Up</button>
+        
+  </form>
+</div>
+  
+  </div>
+
+  <footer style="margin-top: 30%; padding:20px;">
+    <p>Copyright &copy; 2017 Sabaka Bazar Grocery Supplies Pvt Ltd</p>
+  </footer>
+  <script>
+function submitsignup() {
+        var name = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var email = document.getElementById("email").value;
+        var psw = document.getElementById("psw").value;
+        var cpsw = document.getElementById("cpsw").value;
+        var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+        var error=""
+  
+        if (fname == "" || lname=="" || lname=="" || lname=="" || lname=="" ) {
+          error="please fill all details";
+          alert(error);
+        }
+  
+        else if (!email.match(mailformat)) {
+          error="please fill valid email id ";
+          alert(error);
+           
+        }
+
+        else if (psw != cpsw) {
+          error="password and confirm password is not same ";
+          alert(error+"--"+psw+"--"+cpsw);
+        }
+        else {alert("user registerd succesfully ")}
+        document.getElementById("error").innerHTML=error
+  
+      
+
+    }
+
+
+  </script>
+<!-- <script src="javascript.js"></script>    -->
+</body>
+</html>

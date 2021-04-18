@@ -1,0 +1,141 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<style>
+  body {
+    padding-top: 10px;
+  }
+  a p{color: black;}
+  .show-cart li {
+    display: flex;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+  }
+  </style>
+<nav class="nav1">
+<div style="display: flex;
+justify-content: space-between;">
+<div></div>
+<div> <i class="fa fa-shopping-cart" aria-hidden="true"></i> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+</div>
+</div>
+</nav>
+
+
+
+
+  <!-- Nav -->
+  <!-- <nav class="navbar fixed-top navbar navbar-expand-sm bg-light navbar-light ">
+      <div class="row">
+          <div class="col" style="margin-right: 0px;">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+             <button class="clear-cart btn btn-danger">Clear Cart</button> 
+          </div>
+      </div>
+  </nav> -->
+  
+  
+  <!-- Main -->
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2" id="product" style="background: #8080806b;">
+
+        </div>
+        <div class="col-sm-10">
+          <div class="row" id="productdiv">
+            <div class="col-sm-3">
+              <div class="card" style="">
+                <h4 class="card-title">Orange</h4>
+        <img class="card-img-top" src="http://www.azspagirls.com/files/2010/09/orange.jpg" alt="Card image cap">
+        
+        <div class="card-block">
+          <div style="overflow: hidden;background: #8080806b;height: 100px;"><p class="card-text">huuuuuuuu
+            uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+            uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</p>
+          </div>
+         
+          
+            <div style="display: flex;"><p class="card-text">Price: $0.5</p>
+              <a href="#" data-name="Orange" data-price="0.5" class="add-to-cart btn btn-danger">Buy now</a></div>
+          
+        </div>
+      </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card" style="">
+        <img class="card-img-top" src="http://images.all-free-download.com/images/graphicthumb/vector_illustration_of_ripe_bananas_567893.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Banana</h4>
+          <p class="card-text">Price: $1.22</p>
+          <a href="#" data-name="Banana" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card" style="">
+        <img class="card-img-top" src="https://3.imimg.com/data3/IC/JO/MY-9839190/organic-lemon-250x250.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Lemon</h4>
+          <p class="card-text">Price: $5</p>
+          <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card" style="">
+        <img class="card-img-top" src="https://3.imimg.com/data3/IC/JO/MY-9839190/organic-lemon-250x250.jpg" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Lemon</h4>
+          <p class="card-text">Price: $5</p>
+          <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+  </div>
+  
+  
+    
+   <!-- Modal -->
+  <div class="modal fade"  id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content" style="background: #dad8d8f7">
+        <div class="modal-header" style="background: white; margin-bottom:20px;">
+          <h5 class="modal-title" id="exampleModalLabel">my cart 0 Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background: white;margin-bottom: 20px;">
+          <table class="show-cart table">
+            
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer" style="background: white;margin-bottom: 20px;">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Order now</button>
+        </div>
+        <div class="modal-footer" style="background: white;margin-bottom: 20px;">
+          
+          <button type="button" class="btn btn-danger btn-lg btn-block">
+            <div style="display:flex;justify-content: space-between;"><span>procced to checkout</span><span>Rs. 187 ></span></div> </button>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+  <script src="cartjs.js"></script>
+  <script src="javascript.js"></script>

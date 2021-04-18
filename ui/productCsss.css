@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 430px; /* Should be removed. Only for demonstration */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+   
+  }
+  .borderDooted{
+    border-bottom-style: dotted;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .bb{
+      border-bottom: 1px solid grey;
+  }
+  .img{
+      width: 100px;
+  }
+  .img_cen{
+      text-align: center;
+  }
+  .bg_p{
+    background: #cccccc;
+    padding: 10px;
+    overflow: hidden;
+    white-space: normal;
+    height: 8.2em; /* exactly 2 lines */
+    text-overflow: -o-ellipsis-lastline;
+  }
+  
+  .btn_red{
+      background-color: red;
+      color: #fff;
+      padding:10px;
+  }
+  a.btn_red{
+      text-decoration: none;
+  }
+  .mr{
+    margin-left: 69px;
+  }

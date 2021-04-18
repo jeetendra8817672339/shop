@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,600,700');
+
+:root {
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* ************************************************ */
+.header{padding: 5px 0px;}
+.flex {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; 
+}
+
+
+header .navbar{
+  padding: 5px 100px;
+}
+
+.leftNav ul{
+  padding-left: 100px;
+}
+
+.offerSize{padding: 5px 100px;
+  }
+  .column{text-align: center;
+    width: 50%;
+    padding: 10px;
+    height: 220px;
+    }
+
+    
+.offersec:nth-child(2){
+flex-direction: row-reverse;}
+
+.columndesc{
+flex-basis:70%
+}
+
+.bgColor{
+  padding: 10px;
+  background-color: #cccccc;
+}
+.fa-shopping-cart{color: red;}
+@media only screen and (max-width: 600px) {
+/* .flex {flex-direction:column};
+.offersec .flex{display: flex};  */
+
+  
+}
+
+
+
+
+  .boxShadow{
+    box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+    height: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .btnSec{padding-top: 40px;}
+  .cta_btn{
+    background: red;
+    padding: 10px 10px 10px 10px;
+    
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+
+  footer{
+    background-color:grey;
+    text-align: center;
+  }
+body {
+  font-family: 'Dosis', sans-serif;;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
